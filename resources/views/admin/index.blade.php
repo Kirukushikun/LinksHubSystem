@@ -90,7 +90,6 @@
         }
 
         .sidebar-logo-box {
-            width: 44px;
             height: 44px;
             background: linear-gradient(135deg, var(--orange), var(--maroon));
             border-radius: 10px;
@@ -98,6 +97,9 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 10px;
+            
+            width: fit-content;
+            padding: 6px 14px;
         }
 
         .sidebar-logo-box span {
@@ -112,6 +114,13 @@
             font-weight: 700;
             color: white;
         }
+
+        .sidebar-brand-logo {
+            width: 35px;
+            object-fit: contain;
+        }
+
+        
 
         .sidebar-sub {
             font-size: 9px;
@@ -933,7 +942,7 @@
         {{-- ── Sidebar ── --}}
         <aside class="sidebar">
             <div class="sidebar-logo">
-                <div class="sidebar-logo-box"><span>BFC</span></div>
+                <div class="sidebar-logo-box"><img src="{{ asset('img/BFC-white.png') }}" alt="Logo" class="sidebar-brand-logo"></div>
                 <div class="sidebar-brand">Links Hub</div>
                 <div class="sidebar-sub">Admin Panel</div>
             </div>
