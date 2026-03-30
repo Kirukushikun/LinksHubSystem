@@ -942,7 +942,7 @@
         {{-- ── Sidebar ── --}}
         <aside class="sidebar">
             <div class="sidebar-logo">
-                <div class="sidebar-logo-box"><img src="{{ asset('img/BFC-white.png') }}" alt="Logo" class="sidebar-brand-logo"></div>
+                <div class="sidebar-logo-box"><img src="{{ asset('img/BFC-White.png') }}" alt="Logo" class="sidebar-brand-logo"></div>
                 <div class="sidebar-brand">Links Hub</div>
                 <div class="sidebar-sub">Admin Panel</div>
             </div>
