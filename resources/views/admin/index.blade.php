@@ -1243,316 +1243,178 @@
         // ══════════════════════════════════════
         // ICON DATA
         // ══════════════════════════════════════
-        const ICONS = [{
-                e: '📋',
-                t: 'clipboard form',
-                cat: 'work'
-            },
-            {
-                e: '📝',
-                t: 'note write',
-                cat: 'work'
-            },
-            {
-                e: '📊',
-                t: 'chart analytics',
-                cat: 'work'
-            },
-            {
-                e: '📈',
-                t: 'growth chart',
-                cat: 'work'
-            },
-            {
-                e: '🗂️',
-                t: 'category folder',
-                cat: 'work'
-            },
-            {
-                e: '📌',
-                t: 'pin task',
-                cat: 'work'
-            },
-            {
-                e: '🔖',
-                t: 'bookmark save',
-                cat: 'work'
-            },
-            {
-                e: '🗓️',
-                t: 'calendar schedule',
-                cat: 'work'
-            },
-            {
-                e: '📅',
-                t: 'calendar date',
-                cat: 'work'
-            },
-            {
-                e: '⏰',
-                t: 'alarm clock time',
-                cat: 'work'
-            },
-            {
-                e: '🔐',
-                t: 'lock auth secure',
-                cat: 'work'
-            },
-            {
-                e: '🔑',
-                t: 'key access',
-                cat: 'work'
-            },
-            {
-                e: '🛒',
-                t: 'cart purchase',
-                cat: 'work'
-            },
-            {
-                e: '💼',
-                t: 'briefcase business',
-                cat: 'work'
-            },
-            {
-                e: '🧾',
-                t: 'receipt invoice',
-                cat: 'work'
-            },
-            {
-                e: '💰',
-                t: 'money finance',
-                cat: 'work'
-            },
-            {
-                e: '💳',
-                t: 'card payment',
-                cat: 'work'
-            },
-            {
-                e: '📁',
-                t: 'folder files',
-                cat: 'files'
-            },
-            {
-                e: '📂',
-                t: 'open folder',
-                cat: 'files'
-            },
-            {
-                e: '📄',
-                t: 'document page',
-                cat: 'files'
-            },
-            {
-                e: '📃',
-                t: 'page curl',
-                cat: 'files'
-            },
-            {
-                e: '📜',
-                t: 'scroll document',
-                cat: 'files'
-            },
-            {
-                e: '🗒️',
-                t: 'notepad notes',
-                cat: 'files'
-            },
-            {
-                e: '📰',
-                t: 'newspaper article',
-                cat: 'files'
-            },
-            {
-                e: '📎',
-                t: 'paperclip attach',
-                cat: 'files'
-            },
-            {
-                e: '💾',
-                t: 'disk save',
-                cat: 'files'
-            },
-            {
-                e: '🗄️',
-                t: 'file cabinet archive',
-                cat: 'files'
-            },
-            {
-                e: '💬',
-                t: 'chat message',
-                cat: 'comm'
-            },
-            {
-                e: '📧',
-                t: 'email mail',
-                cat: 'comm'
-            },
-            {
-                e: '📨',
-                t: 'envelope incoming',
-                cat: 'comm'
-            },
-            {
-                e: '📤',
-                t: 'outbox send',
-                cat: 'comm'
-            },
-            {
-                e: '📥',
-                t: 'inbox receive',
-                cat: 'comm'
-            },
-            {
-                e: '📣',
-                t: 'megaphone announce',
-                cat: 'comm'
-            },
-            {
-                e: '🔔',
-                t: 'bell notification',
-                cat: 'comm'
-            },
-            {
-                e: '📞',
-                t: 'phone call',
-                cat: 'comm'
-            },
-            {
-                e: '📱',
-                t: 'mobile phone',
-                cat: 'comm'
-            },
-            {
-                e: '🖥️',
-                t: 'desktop computer',
-                cat: 'comm'
-            },
-            {
-                e: '💻',
-                t: 'laptop computer',
-                cat: 'comm'
-            },
-            {
-                e: '🌐',
-                t: 'globe web internet',
-                cat: 'comm'
-            },
-            {
-                e: '⚙️',
-                t: 'gear settings',
-                cat: 'tools'
-            },
-            {
-                e: '🔧',
-                t: 'wrench tool fix',
-                cat: 'tools'
-            },
-            {
-                e: '🔨',
-                t: 'hammer build',
-                cat: 'tools'
-            },
-            {
-                e: '🛠️',
-                t: 'tools build',
-                cat: 'tools'
-            },
-            {
-                e: '🧰',
-                t: 'toolbox kit',
-                cat: 'tools'
-            },
-            {
-                e: '🧪',
-                t: 'test tube lab',
-                cat: 'tools'
-            },
-            {
-                e: '🔬',
-                t: 'microscope research',
-                cat: 'tools'
-            },
-            {
-                e: '🖱️',
-                t: 'mouse click',
-                cat: 'tools'
-            },
-            {
-                e: '⌨️',
-                t: 'keyboard type',
-                cat: 'tools'
-            },
-            {
-                e: '🪪',
-                t: 'id card badge',
-                cat: 'misc'
-            },
-            {
-                e: '🎨',
-                t: 'palette design art',
-                cat: 'misc'
-            },
-            {
-                e: '✨',
-                t: 'sparkle new',
-                cat: 'misc'
-            },
-            {
-                e: '🌟',
-                t: 'star featured',
-                cat: 'misc'
-            },
-            {
-                e: '🔗',
-                t: 'link chain url',
-                cat: 'misc'
-            },
-            {
-                e: '🔍',
-                t: 'search magnify',
-                cat: 'misc'
-            },
-            {
-                e: '📦',
-                t: 'box package inventory',
-                cat: 'misc'
-            },
-            {
-                e: '🏆',
-                t: 'trophy award',
-                cat: 'misc'
-            },
-            {
-                e: '🎯',
-                t: 'target goal',
-                cat: 'misc'
-            },
-            {
-                e: '🚀',
-                t: 'rocket launch',
-                cat: 'misc'
-            },
-            {
-                e: '💡',
-                t: 'bulb idea',
-                cat: 'misc'
-            },
-            {
-                e: '🧩',
-                t: 'puzzle piece',
-                cat: 'misc'
-            },
-            {
-                e: '📷',
-                t: 'camera photo',
-                cat: 'misc'
-            },
-            {
-                e: '🏢',
-                t: 'office building',
-                cat: 'misc'
-            },
+        const ICONS = [
+            // ── Work ──
+            { e: '📋', t: 'clipboard form', cat: 'work' },
+            { e: '📝', t: 'note write', cat: 'work' },
+            { e: '📊', t: 'chart analytics', cat: 'work' },
+            { e: '📈', t: 'growth chart', cat: 'work' },
+            { e: '📉', t: 'decline chart', cat: 'work' },
+            { e: '🗂️', t: 'category folder', cat: 'work' },
+            { e: '📌', t: 'pin task', cat: 'work' },
+            { e: '🔖', t: 'bookmark save', cat: 'work' },
+            { e: '🗓️', t: 'calendar schedule', cat: 'work' },
+            { e: '📅', t: 'calendar date', cat: 'work' },
+            { e: '⏰', t: 'alarm clock time', cat: 'work' },
+            { e: '⏱️', t: 'stopwatch timer', cat: 'work' },
+            { e: '🔐', t: 'lock auth secure', cat: 'work' },
+            { e: '🔑', t: 'key access', cat: 'work' },
+            { e: '🛒', t: 'cart purchase', cat: 'work' },
+            { e: '💼', t: 'briefcase business', cat: 'work' },
+            { e: '🧾', t: 'receipt invoice', cat: 'work' },
+            { e: '💰', t: 'money finance', cat: 'work' },
+            { e: '💳', t: 'card payment', cat: 'work' },
+            { e: '🏦', t: 'bank finance', cat: 'work' },
+            { e: '💹', t: 'stocks trading', cat: 'work' },
+            { e: '🤝', t: 'handshake deal partner', cat: 'work' },
+            { e: '📢', t: 'announcement broadcast', cat: 'work' },
+            { e: '🎙️', t: 'microphone presentation', cat: 'work' },
+            { e: '🗳️', t: 'ballot vote poll', cat: 'work' },
+            { e: '✅', t: 'check done complete', cat: 'work' },
+            { e: '❎', t: 'cross cancel reject', cat: 'work' },
+            { e: '🔄', t: 'refresh sync reload', cat: 'work' },
+            { e: '🔃', t: 'arrows loop cycle', cat: 'work' },
+            { e: '⚡', t: 'lightning fast urgent', cat: 'work' },
+            { e: '🚦', t: 'traffic status signal', cat: 'work' },
+            { e: '📍', t: 'location pin place', cat: 'work' },
+            { e: '🗺️', t: 'map navigation', cat: 'work' },
+            { e: '🏢', t: 'office building company', cat: 'work' },
+            { e: '🏗️', t: 'construction build project', cat: 'work' },
+
+            // ── Files ──
+            { e: '📁', t: 'folder files', cat: 'files' },
+            { e: '📂', t: 'open folder', cat: 'files' },
+            { e: '📄', t: 'document page', cat: 'files' },
+            { e: '📃', t: 'page curl', cat: 'files' },
+            { e: '📜', t: 'scroll document', cat: 'files' },
+            { e: '🗒️', t: 'notepad notes', cat: 'files' },
+            { e: '📰', t: 'newspaper article', cat: 'files' },
+            { e: '📎', t: 'paperclip attach', cat: 'files' },
+            { e: '💾', t: 'disk save', cat: 'files' },
+            { e: '🗄️', t: 'file cabinet archive', cat: 'files' },
+            { e: '🗃️', t: 'card index box', cat: 'files' },
+            { e: '📑', t: 'bookmarked pages', cat: 'files' },
+            { e: '📒', t: 'notebook ledger', cat: 'files' },
+            { e: '📓', t: 'notebook', cat: 'files' },
+            { e: '📔', t: 'decorated notebook', cat: 'files' },
+            { e: '📕', t: 'closed book', cat: 'files' },
+            { e: '📗', t: 'green book', cat: 'files' },
+            { e: '📘', t: 'blue book', cat: 'files' },
+            { e: '📙', t: 'orange book', cat: 'files' },
+            { e: '📚', t: 'books library', cat: 'files' },
+            { e: '🗞️', t: 'rolled newspaper press', cat: 'files' },
+            { e: '✂️', t: 'scissors cut', cat: 'files' },
+            { e: '🖊️', t: 'pen write edit', cat: 'files' },
+            { e: '🖋️', t: 'fountain pen sign', cat: 'files' },
+            { e: '✒️', t: 'nib pen ink', cat: 'files' },
+            { e: '📐', t: 'ruler triangle measure', cat: 'files' },
+            { e: '📏', t: 'ruler measure', cat: 'files' },
+
+            // ── Comms ──
+            { e: '💬', t: 'chat message', cat: 'comm' },
+            { e: '💭', t: 'thought bubble idea', cat: 'comm' },
+            { e: '🗨️', t: 'speech bubble', cat: 'comm' },
+            { e: '🗯️', t: 'anger bubble reply', cat: 'comm' },
+            { e: '📧', t: 'email mail', cat: 'comm' },
+            { e: '📨', t: 'envelope incoming', cat: 'comm' },
+            { e: '📩', t: 'envelope arrow down', cat: 'comm' },
+            { e: '📤', t: 'outbox send', cat: 'comm' },
+            { e: '📥', t: 'inbox receive', cat: 'comm' },
+            { e: '📣', t: 'megaphone announce', cat: 'comm' },
+            { e: '📡', t: 'satellite signal broadcast', cat: 'comm' },
+            { e: '🔔', t: 'bell notification', cat: 'comm' },
+            { e: '🔕', t: 'mute silent no notification', cat: 'comm' },
+            { e: '📞', t: 'phone call', cat: 'comm' },
+            { e: '☎️', t: 'telephone landline', cat: 'comm' },
+            { e: '📟', t: 'pager beeper', cat: 'comm' },
+            { e: '📠', t: 'fax machine', cat: 'comm' },
+            { e: '📱', t: 'mobile phone', cat: 'comm' },
+            { e: '🖥️', t: 'desktop computer', cat: 'comm' },
+            { e: '💻', t: 'laptop computer', cat: 'comm' },
+            { e: '🖨️', t: 'printer print', cat: 'comm' },
+            { e: '🌐', t: 'globe web internet', cat: 'comm' },
+            { e: '📶', t: 'signal bars wifi', cat: 'comm' },
+            { e: '🛜', t: 'wifi wireless network', cat: 'comm' },
+            { e: '👥', t: 'group team people', cat: 'comm' },
+            { e: '👤', t: 'person profile user', cat: 'comm' },
+            { e: '🧑‍💻', t: 'developer coder tech', cat: 'comm' },
+
+            // ── Tools ──
+            { e: '⚙️', t: 'gear settings', cat: 'tools' },
+            { e: '🔧', t: 'wrench tool fix', cat: 'tools' },
+            { e: '🔨', t: 'hammer build', cat: 'tools' },
+            { e: '🛠️', t: 'tools build', cat: 'tools' },
+            { e: '🧰', t: 'toolbox kit', cat: 'tools' },
+            { e: '🧪', t: 'test tube lab', cat: 'tools' },
+            { e: '🔬', t: 'microscope research', cat: 'tools' },
+            { e: '🔭', t: 'telescope vision research', cat: 'tools' },
+            { e: '🖱️', t: 'mouse click', cat: 'tools' },
+            { e: '⌨️', t: 'keyboard type', cat: 'tools' },
+            { e: '🖲️', t: 'trackball input', cat: 'tools' },
+            { e: '💿', t: 'disc media', cat: 'tools' },
+            { e: '📀', t: 'dvd disc', cat: 'tools' },
+            { e: '🖥️', t: 'monitor screen display', cat: 'tools' },
+            { e: '📲', t: 'mobile tap download', cat: 'tools' },
+            { e: '🔋', t: 'battery power energy', cat: 'tools' },
+            { e: '🔌', t: 'plug power connect', cat: 'tools' },
+            { e: '💡', t: 'bulb idea light', cat: 'tools' },
+            { e: '🔦', t: 'flashlight torch', cat: 'tools' },
+            { e: '🧲', t: 'magnet attract', cat: 'tools' },
+            { e: '⚗️', t: 'alembic chemistry lab', cat: 'tools' },
+            { e: '🧮', t: 'abacus calculate', cat: 'tools' },
+            { e: '📡', t: 'dish antenna signal', cat: 'tools' },
+            { e: '🚧', t: 'construction warning maintenance', cat: 'tools' },
+            { e: '⛏️', t: 'pickaxe mine dig', cat: 'tools' },
+            { e: '🪛', t: 'screwdriver fix', cat: 'tools' },
+            { e: '🪝', t: 'hook attach link', cat: 'tools' },
+
+            // ── Misc ──
+            { e: '🪪', t: 'id card badge', cat: 'misc' },
+            { e: '🎨', t: 'palette design art', cat: 'misc' },
+            { e: '✨', t: 'sparkle new highlight', cat: 'misc' },
+            { e: '🌟', t: 'star featured', cat: 'misc' },
+            { e: '⭐', t: 'star favorite', cat: 'misc' },
+            { e: '🔗', t: 'link chain url', cat: 'misc' },
+            { e: '🔍', t: 'search magnify', cat: 'misc' },
+            { e: '🔎', t: 'search zoom', cat: 'misc' },
+            { e: '📦', t: 'box package inventory', cat: 'misc' },
+            { e: '🏆', t: 'trophy award', cat: 'misc' },
+            { e: '🥇', t: 'gold medal first', cat: 'misc' },
+            { e: '🎯', t: 'target goal', cat: 'misc' },
+            { e: '🚀', t: 'rocket launch', cat: 'misc' },
+            { e: '🧩', t: 'puzzle piece integration', cat: 'misc' },
+            { e: '📷', t: 'camera photo', cat: 'misc' },
+            { e: '🎬', t: 'clapper film video', cat: 'misc' },
+            { e: '🎵', t: 'music note audio', cat: 'misc' },
+            { e: '🎤', t: 'mic record voice', cat: 'misc' },
+            { e: '🗝️', t: 'old key access unlock', cat: 'misc' },
+            { e: '🏷️', t: 'label tag price', cat: 'misc' },
+            { e: '🎁', t: 'gift present reward', cat: 'misc' },
+            { e: '🎉', t: 'party celebrate launch', cat: 'misc' },
+            { e: '🎊', t: 'confetti celebrate', cat: 'misc' },
+            { e: '🌈', t: 'rainbow color spectrum', cat: 'misc' },
+            { e: '🌍', t: 'earth world global', cat: 'misc' },
+            { e: '🗓️', t: 'calendar planner', cat: 'misc' },
+            { e: '🧭', t: 'compass direction navigate', cat: 'misc' },
+            { e: '🏠', t: 'house home', cat: 'misc' },
+            { e: '🏪', t: 'store shop retail', cat: 'misc' },
+            { e: '🚗', t: 'car vehicle transport', cat: 'misc' },
+            { e: '✈️', t: 'airplane travel flight', cat: 'misc' },
+            { e: '🌿', t: 'leaf plant green eco', cat: 'misc' },
+            { e: '🔥', t: 'fire hot trending urgent', cat: 'misc' },
+            { e: '💎', t: 'gem premium diamond', cat: 'misc' },
+            { e: '🪄', t: 'magic wand auto', cat: 'misc' },
+            { e: '🤖', t: 'robot ai bot auto', cat: 'misc' },
+            { e: '👑', t: 'crown king top admin', cat: 'misc' },
+            { e: '🛡️', t: 'shield protect security', cat: 'misc' },
+            { e: '⚠️', t: 'warning alert caution', cat: 'misc' },
+            { e: '🚩', t: 'flag milestone marker', cat: 'misc' },
+            { e: '📮', t: 'postbox submit', cat: 'misc' },
+            { e: '🪟', t: 'window view portal', cat: 'misc' },
+            { e: '🧠', t: 'brain smart ai think', cat: 'misc' },
+            { e: '👁️', t: 'eye view watch monitor', cat: 'misc' },
+            { e: '👋', t: 'wave hello onboard', cat: 'misc' },
+            { e: '💪', t: 'muscle strong power', cat: 'misc' },
         ];
 
         // ══════════════════════════════════════

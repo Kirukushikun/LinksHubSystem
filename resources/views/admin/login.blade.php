@@ -53,8 +53,24 @@
         padding: 40px 20px;
         animation: fadeUp 0.6s ease both;
     }
-    .login-header {
+    /* ── Header ── */
+    .company-header {
         text-align: center;
+    }
+
+    .company-logo {
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .company-tagline {
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-top: -10px;
+        color: var(--text-muted);
     }
     .logo-placeholder {
         width: 130px;
@@ -211,9 +227,9 @@
 
 @section('content')
 <div id="screen-login">
-    <div class="login-header">
-        <div class="logo-placeholder"><span>BFC</span></div>
-        <div class="login-tagline">Bounty Fresh Foods Inc.</div>
+    <div class="company-header">
+        <img src="{{ asset('img/BFC.png') }}" alt="Logo" class="company-logo">
+        <div class="company-tagline">what we do, we do best</div>
     </div>
 
     <div class="login-card">
